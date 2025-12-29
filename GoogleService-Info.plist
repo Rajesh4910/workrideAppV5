@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>API_KEY</key>
+  <string>AIzaSyA1dlrnOFkIr9-AA7LKbc275Fx_Yz2uJ_c</string>
+  <key>GCM_SENDER_ID</key>
+  <string>617231655026</string>
+  <key>PROJECT_ID</key>
+  <string>workride-4a320</string>
+  <key>STORAGE_BUCKET</key>
+  <string>workride-4a320.firebasestorage.app</string>
+  <key>GOOGLE_APP_ID</key>
+  <string>1:617231655026:ios:10175b48368f99f25ba2eb</string>
+  <key>CLIENT_ID</key>
+  <string>617231655026-7j2m7gjbvd078kq5vujc8egha8qnnqfn.apps.googleusercontent.com</string>
+  <key>REVERSED_CLIENT_ID</key>
+  <string>com.googleusercontent.apps.617231655026-7j2m7gjbvd078kq5vujc8egha8qnnqfn</string>
+  <key>BUNDLE_ID</key>
+  <string>com.workride.app</string>
+  <key>PLIST_VERSION</key>
+  <string>1</string>
+</dict>
+</plist>

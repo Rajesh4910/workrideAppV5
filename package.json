@@ -1,0 +1,44 @@
+{
+  "name": "workride-react-native",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "node ./scripts/start-clean.js",
+    "android": "node ./scripts/start-clean.js expo start --android",
+    "android:win": "cmd /c node_modules\\.bin\\expo.cmd start --android",
+    "ios": "node ./scripts/start-clean.js expo start --ios",
+    "web": "node ./scripts/start-clean.js expo start --web",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-community/datetimepicker": "8.4.4",
+    "@react-navigation/bottom-tabs": "^6.6.1",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/native-stack": "^6.11.0",
+    "expo": "^54.0.30",
+    "expo-location": "~19.0.8",
+    "firebase": "^9.23.0",
+    "lodash.debounce": "^4.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-maps": "1.20.1",
+    "react-native-modal-datetime-picker": "^18.0.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "^5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "^15.15.1",
+    "react-native-worklets": "^0.7.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@types/react": "^19.1.0",
+    "expo-module-scripts": "^2.1.1",
+    "typescript": "^5.8.3"
+  }
+}

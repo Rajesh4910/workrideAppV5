@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617231655026",
+    "project_id": "workride-4a320",
+    "storage_bucket": "workride-4a320.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617231655026:android:15ce7ebc93620bcd5ba2eb",
+        "android_client_info": {
+          "package_name": "com.workride.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617231655026-7j2m7gjbvd078kq5vujc8egha8qnnqfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxN4IKwK2Uy2_1z2pm88XOgVAQDTGdlBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617231655026-7j2m7gjbvd078kq5vujc8egha8qnnqfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

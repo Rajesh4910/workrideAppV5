@@ -75,7 +75,7 @@ export default function HostRequestDetailsScreen({ navigation, route }: any) {
       if (Platform.OS === 'android') ToastAndroid.show(msg, ToastAndroid.SHORT);
       else Alert.alert('Accepted', msg);
       navigation.navigate('HostApp');
-    } catch (e) {
+    } catch (e: any) {
       console.warn('Accept failed', e);
       Alert.alert('Error', e?.message || 'Unable to accept request.');
     } finally {
@@ -92,7 +92,7 @@ export default function HostRequestDetailsScreen({ navigation, route }: any) {
       if (Platform.OS === 'android') ToastAndroid.show(msg, ToastAndroid.SHORT);
       else Alert.alert('Declined', msg);
       navigation.goBack();
-    } catch (e) {
+    } catch (e: any) {
       console.warn('Decline failed', e);
       Alert.alert('Error', e?.message || 'Unable to decline request.');
     } finally {

@@ -25,6 +25,13 @@ export default function LocationSearch({
 
   // Build a cancellable debounced search that always reads current countryCode/viewbox
   useEffect(() => {
+    const fetchWithTimeout = async (input: RequestInfo, ms = 5000) => {
+      return await Promise.race([
+        fetch(input, { headers: { 'User-Agent': 'workride-app/1.0 (dev)' } }),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms)),
+      ] as any);
+    };
+
     const fn = debounce(async (text: string) => {
       if (!text || text.length < 2) return setPredictions([]);
       try {
@@ -39,7 +46,7 @@ export default function LocationSearch({
           params.push('bounded=1');
         }
         const url = `https://nominatim.openstreetmap.org/search?${params.join('&')}`;
-        const res = await fetch(url, { headers: { 'User-Agent': 'workride-app/1.0 (dev)' } });
+        const res = await fetchWithTimeout(url, 5000) as Response;
         const json = await res.json();
         const preds = (json || []).map((p: any) => ({ description: p.display_name, place_id: p.place_id || p.osm_id, raw: p } as any));
         setPredictions(preds as Prediction[]);

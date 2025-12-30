@@ -106,7 +106,7 @@ export async function acceptPendingRequest(rideId: string) {
     return true;
   } catch (err) {
     console.warn('acceptPendingRequest failed', err);
-    throw err;
+    return false;
   }
 }
 
@@ -125,7 +125,7 @@ export async function declinePendingRequest(rideId: string) {
     return true;
   } catch (err) {
     console.warn('declinePendingRequest failed', err);
-    throw err;
+    return false;
   }
 }
 
